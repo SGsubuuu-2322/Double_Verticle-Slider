@@ -6,3 +6,5 @@ const buttonDown = document.querySelector(".down-button");
 const slidesLength = sliderRight.querySelectorAll("div").length;
 
 sliderLeft.style.top = `-${(slidesLength - 1) * 100}vh`;
+buttonUp.addEventListener("click", () => changeSlide("up"));
+buttonDown.addEventListener("click", () => changeSlide("down"));
